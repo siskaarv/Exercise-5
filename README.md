@@ -4,13 +4,13 @@ Proyek ini bertujuan untuk mengontrol beberapa LED menggunakan mikrokontroler ST
 
 ## Cara Kerja
 
-1. Task 'FlashGreenLedTask' mengontrol LED hijau dengan pola sebagai berikut:
+1. Task FlashGreenLedTask mengontrol LED hijau dengan pola sebagai berikut:
    - Menyalakan LED Hijau.
    - Mengakses data bersama yang melibatkan penanganan status `StartFlag`.
    - Mematikan LED Hijau.
    - Menunggu atau jeda selama 0,5 detik sebelum mengulangi siklus.
 
-2. Task 'FlashRedLedTask' mengontrol LED merah dengan pola sebagai berikut:
+2. Task FlashRedLedTask mengontrol LED merah dengan pola sebagai berikut:
    - Menyalakan LED Merah.
    - Mengakses data bersama yang melibatkan penanganan status `StartFlag`.
    - Mematikan LED Merah.
