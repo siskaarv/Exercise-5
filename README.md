@@ -22,3 +22,14 @@ Pada proyek ini, FlashRedLedTask memiliki prioritas lebih tinggi dibandingkan de
 
 ## Hardware
 
+## Output Proyek
+1. Task FlashGreenLedTask
+- LED biru dinyalakan dan LED hijau berkedip 80 kali dengan interval 50 ms per kedipan (ON/OFF).
+- Setelah berkedip 80 kali, LED hijau dan LED biru dimatikan.
+- Delay selama 6 detik sebelum mengulangi siklus yang sama.
+2. Task FlashRedLedTask
+- LED kuning dinyalakan dan LED merah berkedip 10 kali dengan interval 50 ms per kedipan (ON/OFF).
+- Setelah berkedip 10 kali, LED merah dan LED kuning dimatikan.
+- Delay selama 1.5 detik sebelum mengulangi siklus yang sama.
+
+Kedua task ini berjalan secara paralel, sehingga LED hijau dan LED merah dapat berkedip bersamaan pada saat tertentu jika siklusnya tumpang tindih.
