@@ -21,8 +21,8 @@ Proyek ini bertujuan untuk mengontrol beberapa LED menggunakan mikrokontroler ST
 Pada proyek ini, FlashRedLedTask memiliki prioritas lebih tinggi dibandingkan dengan FlashGreenLedTask. Hal ini memastikan bahwa FlashRedLedTask akan selalu dijalankan terlebih dahulu oleh FreeRTOS jika kedua task dalam keadaan siap.
 
 ## Hardware
-!(https://drive.google.com/file/d/1hOwbhqC0BFZt6Tv_SRF9xP-DU8YvtP5a/view?usp=drive_link)
-!(https://drive.google.com/file/d/1hVxPWR0SnrUj7aKJ7Qzs-cB_WDCTz6OK/view?usp=drive_link)
+[https://drive.google.com/file/d/1hOwbhqC0BFZt6Tv_SRF9xP-DU8YvtP5a/view?usp=drive_link]
+[https://drive.google.com/file/d/1hVxPWR0SnrUj7aKJ7Qzs-cB_WDCTz6OK/view?usp=drive_link]
 
 ## Output Proyek
 1. Task FlashGreenLedTask
