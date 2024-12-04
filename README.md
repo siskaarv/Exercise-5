@@ -27,7 +27,11 @@ Pada proyek ini, FlashRedLedTask memiliki prioritas lebih tinggi dibandingkan de
 
 
 ## Output Proyek
-* LED Merah akan menyala dan mati dengan cepat setiap 100 milidetik.
-* LED Hijau akan menyala dan mati lebih lambat setiap 500 milidetik.
-* LED Biru akan menyala selama 500 milidetik ketika AccessSharedData diakses oleh task dan startFlag bernilai 0. Hal ini akan terjadi sebagai indikasi adanya akses ke data bersama yang berpotensi terjadi interferensi.
+* LED hijau akan menyala selama 500 ms, kemudian mati selama 500 ms secara berulang-ulang.
+Selama LED hijau menyala atau mati, fungsi AccessSharedData() dipanggil untuk mengecek atau mengubah status dari startFlag.
+* LED merah akan menyala selama 100 ms, kemudian mati selama 100 ms secara berulang-ulang.
+Seperti LED hijau, fungsi AccessSharedData() juga dipanggil di setiap siklus hidup LED merah.
+* LED biru akan menyala untuk menunjukkan adanya interferensi (akses data bersama) di dalam fungsi AccessSharedData().
+LED biru akan menyala selama 500 ms, menunjukkan bahwa startFlag sedang diubah atau diperiksa.
+
 Karena FlashRedLedTask memiliki prioritas lebih tinggi, kemungkinan LED Merah akan lebih sering terlihat aktif dibandingkan dengan LED Hijau, terutama ketika terjadi konten bersamaan.
